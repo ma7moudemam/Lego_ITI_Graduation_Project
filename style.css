@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    padding: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #333;
+    margin: 20px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.box a {
+    font-size: 18px;
+    color: black;
+    margin-top: 5px;
+}
+
+.box input {
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: orangered;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.box input:hover {
+    border: 1px solid orangered;
+    background-color: white;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+.box .price {
+    text-align: left;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.cardImage {
+    border: 1px solid #ccc;
+    height: 280px;
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+.cardImage img {
+    height: 265px;
+    width: 265px;
+    overflow: hidden;
+    transition: 1s;
+    z-index: -5;
+}
+
+.cardImage img:hover {
+    transform: scale(1.2);
+}
+
+.cardImage a {
+    font-size: 16px;
+    z-index: 23;
+    background-color: white;
+    left: 20px;
+}
+
+.cardImage p {
+    position: relative;
+    z-index: 20;
+    color: black;
+    margin: 0;
+    font-size: 16px;
+    background-color: yellow;
+    text-align: center;
+    padding: 5px;
+    width: 50px;
+    top: -30px;
+    left: 10px;
+}
+
+.stars i {
+    font-size: 1rem;
+    color: #eaff05;
+}
