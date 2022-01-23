@@ -15,7 +15,8 @@ h2 {
     font-weight: 400;
     font-size: 2rem;
     color: #333;
-    margin: 20px;
+    margin-left: 50px;
+    margin-top: 80px;
 }
 
 .boxes {
@@ -54,8 +55,12 @@ h2 {
     position: relative;
     left: 20px;
     top: 10px;
-    font-size: 16px;
+    font-size: 14px;
     z-index: 23;
+}
+
+.box .cardImage a i {
+    color: orangered;
 }
 
 .box a:hover {
@@ -80,13 +85,16 @@ h2 {
 }
 
 .cardImage img {
-    height: 250px;
-    width: 250px;
+    position: relative;
+    height: 240px;
+    width: 240px;
     transition: 1s;
+    left: 20px;
+    top: 20px;
 }
 
 .cardImage img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .cardImage p {
@@ -99,7 +107,7 @@ h2 {
     text-align: center;
     padding: 5px;
     width: 50px;
-    top: -50px;
+    top: -30px;
     left: 20px;
 }
 
