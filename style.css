@@ -5,10 +5,13 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
-    padding: 40px;
     display: flex;
-    gap: 30px;
+    justify-content: center;
 }
 
 h2 {
@@ -16,23 +19,30 @@ h2 {
     font-size: 2rem;
     color: #333;
     margin-left: 50px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .boxes {
     display: flex;
     flex-direction: row;
+    gap: 30px;
+    margin-top: 20px;
+    margin: 20px;
+    width: 80%;
+    overflow-x: scroll;
 }
 
 .box {
     display: flex;
     flex-direction: column;
+    height: 500px;
 }
 
 .box a {
     font-size: 18px;
     color: black;
     margin-top: 5px;
+    height: 30px;
 }
 
 .box input {
