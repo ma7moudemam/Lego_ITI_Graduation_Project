@@ -50,6 +50,14 @@ h2 {
     background-color: white;
 }
 
+.box .cardImage a {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-size: 16px;
+    z-index: 23;
+}
+
 .box a:hover {
     text-decoration: underline;
 }
@@ -68,25 +76,17 @@ h2 {
     height: 280px;
     width: 280px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .cardImage img {
-    height: 265px;
-    width: 265px;
-    overflow: hidden;
+    height: 250px;
+    width: 250px;
     transition: 1s;
-    z-index: -5;
 }
 
 .cardImage img:hover {
     transform: scale(1.2);
-}
-
-.cardImage a {
-    font-size: 16px;
-    z-index: 23;
-    background-color: white;
-    left: 20px;
 }
 
 .cardImage p {
@@ -99,8 +99,8 @@ h2 {
     text-align: center;
     padding: 5px;
     width: 50px;
-    top: -30px;
-    left: 10px;
+    top: -50px;
+    left: 20px;
 }
 
 .stars i {
