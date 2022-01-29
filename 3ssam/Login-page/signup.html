@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="login-container signup-container">
+        <div class="header">
+            <div class="title signup-title">
+                <img src="./imgs/LEGOAccount-Logo.svg" alt="Lego Logo">
+            </div>
+        </div>
+        <div class="login-suPage">
+            <h2>Create your adult LEGO® Account</h2>
+            <p>Already have an account?</p>
+            <a href="login.html">Log in</a>
+            <div class="divider">
+                <span>Or sign up</span>
+            </div>
+        </div>
+        <div class="signup-logo">
+            <img src="./imgs/signupimg.png" alt="">
+        </div>
+        <form id="signupForm" class="lego-form">
+            <div class="login-email">
+                <label for="signupEmail">Email address</label>
+                <input type="text" id="signupEmail" name="signup-email" placeholder="example@domain.com" required>
+            </div>
+            <div class="login-password">
+                <label for="signupPassword">Password</label>
+                <input type="password" name="signup-password" id="signupPassword" placeholder="......." required>
+            </div>
+            <div class="birth-date">
+                <label for="birthDate" class="birthDate">Birthdate</label>
+                <div class="dateInputs">
+                    <div class="signup-flex-date birthInputs">
+                        <div>
+                            <label for="birthMonth">Month</label>
+                            <input type="number" placeholder="MM" name="month" id="birthMonth" required>
+                        </div>
+                        <div>
+                            <label for="birthDay">Day</label>
+                            <input type="number" placeholder="DD" name="day" id="birthDay" required>
+                        </div>
+                        <div>
+                            <label for="birthYear">Year</label>
+                            <input type="number" placeholder="YYYY" name="year" id="birthYear" required>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="countries">
+                <label for="country">Country</label>
+                <select name="country" id="countries" required>
+                    <option value="egypt">Egypt</option>
+                    <option value="mansoura">Mansoura</option>
+                    <option value="cairo">Cairo</option>
+                    <option value="faqoos">Faqoos</option>
+                    <option value="3enaab">3naba</option>
+                </select>
+                <span><img src="./imgs/down-arrow.svg" alt=""></span>
+
+            </div>
+            <button type="submit" class="login-button">Sign up</button>
+        </form>
+
+    </div>
+</body>
+
+</html>

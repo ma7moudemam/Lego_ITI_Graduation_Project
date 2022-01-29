@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: ceraProLight;
+  src: url("../fonts/Cera Pro Light.otf");
+}
+
+@font-face {
+  font-family: ceraProBold;
+  src: url("../fonts/Cera Pro Bold.otf");
+}
+
+@font-face {
+  font-family: ceraProMed;
+  src: url("../fonts/Cera Pro Medium.otf");
+}
+
+body {
+  background: #f2f5f7;
+  font-family: ceraProLight, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login-container {
+  background-color: #f2f5f7;
+  padding-bottom: 2rem;
+}
+
+.header {
+  background-color: #ffcf00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.header .title {
+  margin-left: auto;
+}
+
+.header .close {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.logo {
+  margin: 2rem 0;
+}
+
+.logo img {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 80px;
+}
+
+.lego-form {
+  padding: 0 2rem;
+}
+
+.lego-form div {
+  margin-bottom: 15px;
+}
+
+.lego-form label {
+  display: block;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.lego-form input[type="text"],
+.lego-form input[type="password"] {
+  width: 100%;
+  height: 50px;
+  padding: 0 1rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.lego-form .remember-me label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.lego-form .remember-me label:hover {
+  color: #0250bb;
+  text-decoration: underline;
+}
+
+.lego-form .remember-me input {
+  width: 18px;
+  height: 18px;
+}
+
+.lego-form .logout-advice {
+  padding: 0 1rem;
+  color: #727272;
+}
+
+.lego-form .login-button {
+  background-color: #006cb6;
+  color: #fff;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  margin: 2rem auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: background .3s ease;
+  transition: background .3s ease;
+}
+
+.lego-form .login-button:hover {
+  background-color: #004584;
+}
+
+.forgetting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0;
+  font-family: ceraProBold;
+  font-size: 0.9rem;
+}
+
+.forgetting a {
+  display: block;
+  margin: 0 5px;
+  color: #006cb6;
+  text-decoration: none;
+}
+
+.forgetting a:hover {
+  color: #004584;
+}
+
+a {
+  display: block;
+  margin: 0 5px;
+  color: #006cb6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #004584;
+}
+
+.go-signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: ceraProBold;
+}
+
+.header .signup-title {
+  margin: 0;
+}
+
+.login-suPage {
+  padding: 1rem 0px;
+  text-align: center;
+}
+
+.login-suPage h2 {
+  font-family: ceraProMed;
+  margin-bottom: 1rem;
+}
+
+.login-suPage a {
+  font-family: ceraProBold;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.login-suPage .divider {
+  position: relative;
+  margin: 0px 40px;
+}
+
+.login-suPage .divider:after,
+.login-suPage .divider:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  border-top: 2px double #badbf4;
+  display: block;
+  width: 50%;
+}
+
+.login-suPage .divider:after {
+  right: 0;
+}
+
+.login-suPage .divider span {
+  position: relative;
+  z-index: 5;
+  background: #f2f5f7;
+  padding: 0 15px;
+}
+
+.signup-logo {
+  text-align: center;
+}
+
+.signup-logo img {
+  width: 70%;
+}
+
+.birth-date label {
+  color: #787878;
+  font-size: 15px;
+}
+
+.birth-date .signup-flex-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+.birth-date .signup-flex-date label {
+  margin: 15px 0 0;
+  color: #333;
+}
+
+.birth-date .signup-flex-date div input {
+  width: 100%;
+  height: 50px;
+  padding: 0 1rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.birth-date .signup-flex-date input::-webkit-outer-spin-button,
+.birth-date .signup-flex-date input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.birth-date .signup-flex-date input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.countries {
+  position: relative;
+}
+
+.countries select {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  padding: 0 1rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+}
+
+.countries span {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 54%;
+  right: 20px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.countries span img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .login-container {
+    border: 4px solid #fff;
+    max-width: 495px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ceraProLight;
+    src: url("../fonts/Cera\ Pro\ Light.otf");
+}
+
+@font-face {
+    font-family: ceraProBold;
+    src: url("../fonts/Cera\ Pro\ Bold.otf");
+}
+
+@font-face {
+    font-family: ceraProMed;
+    src: url("../fonts/Cera\ Pro\ Medium.otf");
+}
+
+body {
+    background: #f2f5f7;
+    font-family: ceraProLight, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login-container {
+    background-color: #f2f5f7;
+    padding-bottom: 2rem;
+}
+
+.header {
+    background-color: #ffcf00;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+
+    .title {
+        margin-left: auto;
+    }
+
+    .close {
+        align-self: center;
+        margin-left: auto;
+        cursor: pointer;
+
+    }
+
+}
+
+.logo {
+    margin: 2rem 0;
+
+    img {
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        margin: 0 auto;
+        width: 80px;
+    }
+}
+
+.lego-form {
+    padding: 0 2rem;
+
+    div {
+        margin-bottom: 15px;
+
+    }
+
+    label {
+        display: block;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        height: 50px;
+        padding: 0 1rem;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    .remember-me {
+        label {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        label:hover {
+            color: #0250bb;
+            text-decoration: underline;
+        }
+
+        input {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .logout-advice {
+        padding: 0 1rem;
+        color: rgb(114, 114, 114);
+    }
+
+    .login-button {
+        background-color: #006cb6;
+        color: #fff;
+        padding: 1rem 3rem;
+        font-size: 1.3rem;
+        margin: 2rem auto;
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background .3s ease;
+
+        &:hover {
+            background-color: #004584;
+        }
+    }
+}
+
+.forgetting {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    font-family: ceraProBold;
+    font-size: 0.9rem;
+
+    a {
+        display: block;
+        margin: 0 5px;
+        color: #006cb6;
+        text-decoration: none;
+
+        &:hover {
+            color: #004584;
+        }
+    }
+}
+
+a {
+    display: block;
+    margin: 0 5px;
+    color: #006cb6;
+    text-decoration: none;
+
+    &:hover {
+        color: #004584;
+    }
+}
+
+.go-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: ceraProBold;
+}
+
+// sign up page
+.header .signup-title {
+    margin: 0;
+}
+
+.login-suPage {
+    padding: 1rem 0px;
+    text-align: center;
+}
+
+.login-suPage h2 {
+    font-family: ceraProMed;
+    margin-bottom: 1rem;
+}
+
+.login-suPage a {
+    font-family: ceraProBold;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.login-suPage .divider {
+    position: relative;
+    margin: 0px 40px;
+}
+
+.login-suPage .divider:after,
+.login-suPage .divider:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    border-top: 2px double #badbf4;
+    display: block;
+    width: 50%;
+}
+
+.login-suPage .divider:after {
+    right: 0;
+}
+
+.login-suPage .divider span {
+    position: relative;
+    z-index: 5;
+    background: #f2f5f7;
+    padding: 0 15px;
+}
+
+.signup-logo {
+    text-align: center;
+}
+
+.signup-logo img {
+    width: 70%;
+}
+
+.birth-date {
+    label {
+        color: #787878;
+        font-size: 15px;
+    }
+
+    .signup-flex-date {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        label {
+            margin: 15px 0 0;
+            color: #333;
+        }
+
+        div input {
+            width: 100%;
+            height: 50px;
+            padding: 0 1rem;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    }
+
+}
+
+.countries {
+    position: relative;
+
+    select {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        padding: 0 1rem;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        -moz-appearance: none;
+        /* Firefox */
+        -webkit-appearance: none;
+        /* Safari and Chrome */
+        appearance: none;
+
+        // &:focus-within {
+        //     &~span {
+        //         transform: rotate(180deg);
+
+        //     }
+        // }
+
+    }
+
+
+    span {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 54%;
+        right: 20px;
+        transition: all .3s ease;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .login-container {
+        border: 4px solid #fff;
+        max-width: 495px;
+        margin: 0 auto;
+    }
+}
