@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="header">
+            <div class="title">
+                <img src="./imgs/LEGOAccount-Logo.svg" alt="Lego Logo">
+            </div>
+            <div class="close">
+                <a href="home.html">
+                    <img src="./imgs/close.svg" alt="close button">
+                </a>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="./imgs/lego(1)large.png" alt="">
+        </div>
+        <form id="loginForm" class="lego-form">
+            <div class="login-email">
+                <label for="loginEmail">Username</label>
+                <input type="text" id="loginEmail" name="login-email" placeholder="Username/Email" required>
+            </div>
+            <div class="login-password">
+                <label for="loginPassword">Password</label>
+                <input type="password" name="login-password" id="loginPassword" placeholder="Enter your password"
+                    required>
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" value="rememberme" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember me</label>
+            </div>
+            <p class="logout-advice">
+                Remember to log out afterwards if you’re using a shared computer, for example in a library or school.
+            </p>
+            <button type="submit" class="login-button">Log in</button>
+        </form>
+        <div class="forgetting">
+            <a href="#">Forgot username?</a> |
+            <a href="#">Forgot password</a>
+        </div>
+        <div class="go-signup">
+            <p>Don’t have a LEGO® Account?</p>
+            <a href="./signup.html">Create account</a>
+        </div>
+    </div>
+</body>
+
+</html>
