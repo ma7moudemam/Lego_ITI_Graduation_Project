@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myOrder.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <ul class="ulist ">
+                <li class="list-direct "><a href="#" class="link">Home</a> 
+                    <svg class="arrow"  height="10" width="10" viewBox="0 0 18 28" xmlns="http://www.w3.org/2000/svg">
+                        <path   d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
+                        fill="currentColor"/>
+                    </svg>
+                </li>
+                <li class="list-direct"><span>My Orders</span> </li>
+            </ul>
+            <div class="container-content ">
+                <ul class="menu">
+                    <a href="../Account/account.html" class="side-menu">
+                        <li class="side-menu-items ">
+                            Account Overview
+                        </li>
+                    </a>
+                    <a href="../my order/myOrder.html" class="side-menu">
+                        <li class="side-menu-items" style="background:rgb(0, 109, 183)">
+                            <span>My Orders</span>
+                        </li>
+                    </a>
+                    <a href="../Personal & Address Details/Personal.html"  class="side-menu">
+                        <li class="side-menu-items ">
+                            Personal & Address Details
+                        </li>
+                    </a>
+                    <a href="../wishList/wishList.html" class="side-menu">
+                        <li class="side-menu-items ">
+                            Wish list
+                        </li>
+                    </a>
+                    <a href="#" class="side-menu">
+                        <li class="side-menu-items ">
+                            Logout
+                        </li>
+                    </a>
+                </ul>
+                <ul class="menuTwo">
+                    <div>
+                        <button class="btn-menu" onclick="toggling()">
+                            <div class="account-menu" >
+                                <div class="account-menu-text">account menu</div>
+                                <div class="menu-arrow">
+                                    Wish list
+                                    <svg class="rotate up" width="18" height="28" viewBox="0 0 18 28" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
+                                    fill="currentColor" ></path>
+                                </svg>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="hiddenMenu">
+                            <a href="../Account/account.html" class="side-menu">
+                                <li class="side-menu-items ">
+                                    Account Overview
+                                </li>
+                            </a>
+                            <a href="../my order/myOrder.html" class="side-menu">
+                                <li class="side-menu-items" style="background:rgb(0, 109, 183)">
+                                    <span>My Orders</span>
+                                </li>
+                            </a>
+                            <a href="../Personal & Address Details/Personal.html"  class="side-menu">
+                                <li class="side-menu-items ">
+                                    Personal & Address Details
+                                </li>
+                            </a>
+                            <a href="../wishList/wishList.html" class="side-menu">
+                                <li class="side-menu-items ">
+                                    Wish list
+                                </li>
+                            </a>
+                            <a href="#" class="side-menu">
+                                <li class="side-menu-items ">
+                                    Logout
+                                </li>
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+                <div class="inner-content ">
+                    <!-- My orders -->
+                    <h1 class="nameOfBlock">My Orders</h1>
+                    <div class="wrapper-order">
+                        <span class="heading">Latest Order</span>
+                        <div class="wrapper-orders">
+                            <span class="order-text">
+                                You currently have no open orders.
+                            </span>
+                            <button class="order-btn">
+                                Start Shopping
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- wish support -->
+                    <div class="wish-supp">
+                        <img src="./imags/Support_2.png" class="img-supp" alt="">
+                        <span class="supp-heading">Support</span>
+                        <div class="line-break"></div>
+                        <div class="wrapper-supp">
+                            <div class="cont-supp-link">
+                                <a href="#" class="supp-link">Deliveries and Returns</a>
+                                <a href="#" class="supp-link">FAQs</a>
+                            </div>
+                            <div class="line-breakTwo"></div>
+                            <div class="cont-supp-link">
+                                <a href="#" class="supp-link">Contact </a>
+                                <a href="#" class="supp-link">Replacement Parts and Instructions</a>
+                            </div>
+                        </div>
+                    </div>  
+
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggling(){
+            let mysvg = document.querySelector(".rotate");
+            mysvg.classList.toggle("down")
+            let hiddenMenu = document.querySelector(".hiddenMenu");
+            hiddenMenu.classList.toggle("show")
+        }                    
+    </script>
+</body>
+</html>

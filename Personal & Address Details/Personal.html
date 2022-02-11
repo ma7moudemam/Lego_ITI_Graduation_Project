@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Personal.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <ul class="ulist ">
+                <li class="list-direct "><a href="#" class="link">Home</a> 
+                    <svg class="arrow"  height="10" width="10" viewBox="0 0 18 28" xmlns="http://www.w3.org/2000/svg">
+                        <path   d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
+                        fill="currentColor"/>
+                    </svg>
+                </li>
+                <li class="list-direct"><span>Personal & Address Details</span> </li>
+            </ul>
+            <div class="container-content ">
+                <ul class="menu">
+                    <a href="../Account/account.html" class="side-menu">
+                        <li class="side-menu-items ">
+                            Account Overview
+                        </li>
+                    </a>
+                    <a href="../my order/myOrder.html" class="side-menu">
+                        <li class="side-menu-items ">
+                            My Orders
+                        </li>
+                    </a>
+                    <a href="../Personal & Address Details/Personal.html"  class="side-menu">
+                        <li class="side-menu-items" style="background:rgb(0, 109, 183)">
+                            <span>Personal & Address Details</span>
+                        </li>
+                    </a>
+                    <a href="../wishList/wishList.html" class="side-menu">
+                        <li class="side-menu-items ">
+                            Wish list
+                        </li>
+                    </a>
+                    <a href="#" class="side-menu">
+                        <li class="side-menu-items ">
+                            Logout
+                        </li>
+                    </a>
+                </ul>
+                <ul class="menuTwo">
+                    <div>
+                        <button class="btn-menu" onclick="toggling()">
+                            <div class="account-menu" >
+                                <div class="account-menu-text">account menu</div>
+                                <div class="menu-arrow">
+                                    Wish list
+                                    <svg class="rotate up" width="18" height="28" viewBox="0 0 18 28" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
+                                    fill="currentColor" ></path>
+                                </svg>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="hiddenMenu">
+                            <a href="../Account/account.html" class="side-menu">
+                                <li class="side-menu-items ">
+                                    Account Overview
+                                </li>
+                            </a>
+                            <a href="../my order/myOrder.html" class="side-menu">
+                                <li class="side-menu-items ">
+                                    My Orders
+                                </li>
+                            </a>
+                            <a href="../Personal & Address Details/Personal.html"  class="side-menu">
+                                <li class="side-menu-items" style="background:rgb(0, 109, 183)">
+                                    <span>Personal & Address Details</span>
+                                </li>
+                            </a>
+                            <a href="../wishList/wishList.html" class="side-menu">
+                                <li class="side-menu-items ">
+                                    Wish list
+                                </li>
+                            </a>
+                            <a href="#" class="side-menu">
+                                <li class="side-menu-items ">
+                                    Logout
+                                </li>
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+                <div class="inner-content ">
+                    <!-- personal things -->
+                    <h1 class="nameOfBlock">Personal & Address Details</h1>  
+                    <div class="acc-block">
+                        <span class="heading">LEGO® Account Details</span>
+                        <span class=" personal-text">
+                            The LEGO ID is your gateway to logging into LEGO digital experiences, 
+                            go here to edit your LEGO Account details
+                        </span>
+                        <div class="wrapper-personal-btn">
+                            <button class="personal-btn">LEGO® Account Details</button>
+                            <div class="personal-email">
+                                <span class="lego-account">LEGO® Account Email</span>
+                                <span class="personal-text ">-----@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="heading ">My Addresses</span>
+                    <div class="address-block ">
+                        <div class="address-wrapper">
+                            <svg class="address-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+                                <g fill="currentColor" fill-rule="evenodd">
+                                    <path d="M42 24H0v-6h42z"></path>
+                                    <path d="M18 0h6v42h-6z"></path>
+                                </g>
+                            </svg>
+                            <span class=" add-address">Add New Address</span>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggling(){
+            let mysvg = document.querySelector(".rotate");
+            mysvg.classList.toggle("down")
+            let hiddenMenu = document.querySelector(".hiddenMenu");
+            hiddenMenu.classList.toggle("show")
+        }                    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+.link{
+    color: #4093D0;
+    text-decoration: none
+}
+.link:hover{
+    text-decoration: underline;
+}
+.ulist {
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    display: flex;
+    padding: 1rem 2rem;
+    list-style-type: none;
+}
+.list-direct {
+    display: flex;
+    align-items: center;
+}
+.arrow{
+    color: rgb(117, 113, 113);
+    margin-left: 0.5rem;
+    padding: 0px 0.5rem;
+}
+.container-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 2rem 2.5rem;
+}
+.side-menu{
+    text-decoration: none;
+}
+.btn {
+    width: 100%;
+}
+.menuTwo{
+    flex:1 1 100%;
+    max-width: 18rem;
+    flex-direction: column;
+    display: none;
+    /* border-top: 1px solid #ddd; */
+}
+.btn-menu{
+    width: 100%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.account-menu{
+    background-color: rgb(248, 248, 248);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.5rem 0px 0.5rem 1rem;
+    line-height: 1.3rem;
+    /* border: 1px solid rgb(224, 224, 224); */
+}
+.account-menu-text{
+    text-align: start;
+    font-size: .8rem;
+    color: rgb(117, 117, 117);
+    text-transform: uppercase;
+}
+.menu-arrow{
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+}
+.menu-arrow svg{
+    width: 11px;
+    margin-right: 2rem;
+    margin-top: -.5rem;
+    color: rgb(117, 117, 117);
+}
+.up{
+    transition: 0.1s linear 0s;
+    transform: rotate(90deg);
+}
+.down {
+    transition: 0.1s linear 0s;
+    transform: rotate(270deg);
+}
+.hiddenMenu{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+    overflow: hidden;
+}
+.show{
+    max-height: 500px;
+    transition: max-height .5s ease-in;
+}
+.menu {
+    display: flex;
+    max-width: 18rem;
+    flex-direction: column;
+    border-top: 1px solid rgb(224, 224, 224);
+    flex: 1 1 35%;
+}
+.side-menu-items {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    border-left: 1px solid rgb(224, 224, 224);
+    border-right: 1px solid rgb(224, 224, 224);
+    padding: 1rem;
+    color: black;
+}.side-menu-items span{
+    border-bottom: 1px solid white;
+    color: white;
+}
+.inner-content {
+    width: 100%;
+    padding: 0px 1.5rem;
+}
+.nameOfBlock {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: rgb(51, 44, 44);
+}
+.heading {
+    color: rgb(51, 44, 44);
+    font-size: 1.2rem;
+    line-height: 2rem;    
+    font-weight: 400;
+}
+.wrapper-account {
+    display: flex;
+}
+.account-block {
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex: 1 1 57%;
+    background-image: linear-gradient(0deg, rgb(224, 224, 224) 0%, rgb(248, 248, 248) 100%);
+}
+.img-wrapper {
+    display: flex;
+    flex: 1 1 45%;
+    overflow: hidden;
+}
+.img-logo {
+    display: flex;
+    margin: 0px 1rem -5rem;
+    height: 15.5rem;
+}
+.vip-cont {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 55%;
+    margin: 1rem;
+    line-height: 1.5rem;
+}
+.vip-head {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.vip-text{
+    font-size: 1rem;
+}
+.vip-img {
+    max-height: 1.25rem;
+    align-self: flex-end;
+}
+.cont-vip-btn {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 43%;
+}
+.wrapper-vip-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1 1 0%;
+    padding: 1.1rem;
+    background-color: rgb(10, 77, 173);
+    border-radius: 0px 0px 5px ;
+}
+.vip-btn-text {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+    line-height:1.5rem;
+}
+.vip-btn {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1.1rem;
+}
+.btn {
+    display: inline-block;
+    padding:1rem;
+    border: 1px solid  rgb(0, 109, 183);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1rem;
+    background-color:white;
+    color: black;
+    text-decoration: none;
+}
+.wrapper-order {
+    margin: 1.5rem 0px;
+}
+.wrapper-orders {
+    background-color: rgb(248, 248, 248);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2rem 0px;
+    padding: 1.5rem;
+}
+.order-text {
+    color: rgb(51, 44, 44);
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.order-btn {
+    border: 1px solid;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: black;
+    color:white;
+    margin-top: 1rem;
+}
+.order-btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.acc-wrapper-personal {
+    background-color: rgb(248, 248, 248);
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0px;
+}
+.personal-text {
+    color: rgb(51, 44, 44);
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.wrapper-personal-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.personal-btn {
+    font-size: .9rem;
+    display: inline-block;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1rem;
+    background-color: rgb(0, 109, 183);
+    color: white;
+    border-color: rgb(0, 109, 183);
+    text-decoration: none;
+}.personal-btn:hover{
+    background-color: white;
+    color: black;
+}
+.wish-supp {
+    border-radius: 5px;
+    padding: 0px 1rem;
+    position: relative;
+    margin: 2.5rem 0px 1.1rem;
+    background-color: rgb(248, 248, 248);
+}
+.img-supp {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: -1.5rem;
+    right: -2rem;
+}
+.supp-heading{
+    display: block;
+    padding: 1rem 0px;
+}
+.line-break {
+    height: 0px;
+    border-top: 1px solid rgb(224, 224, 224);
+    margin-right: 50px;
+}
+.wrapper-supp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cont-supp-link{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem 0px;
+}
+.supp-link {
+    text-decoration: none;
+    width: 50%;
+    color: black;
+    font-size: .9rem;
+}
+.line-breakTwo {
+    height: 0px;
+    border-top: 1px solid rgb(224, 224, 224);
+}
+@media screen and (max-width: 900px) {
+    .wrapper-account {
+        flex-direction: column;
+    }
+    .container-content{
+        flex-direction: column;
+    }
+    .inner-content{
+        padding: 1.5rem 0px;
+    }
+    .menu{
+        display: none;
+    }
+    .menuTwo{
+        display: block;
+    }
+}
